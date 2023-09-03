@@ -13,10 +13,10 @@ class MainveiwModel:ViewModel() {
 
         var resultado=Result("")
         if (texto1 == texto2) {
-            resultado=Result("Son iguales")
+            resultado=Result("Son identicos")
             _result.value=resultado
         } else {
-            resultado=Result("Son distintos")
+            resultado=Result("No son identicos")
             _result.value=resultado
         }
 

@@ -39,7 +39,7 @@ class MainActivityTest {
             ViewMatchers.withId(R.id.texto2))
             .check(
             ViewAssertions.matches(
-                ViewMatchers.withText("son iguales")
+                ViewMatchers.withText("Son identicos")
             )
         )
     }
