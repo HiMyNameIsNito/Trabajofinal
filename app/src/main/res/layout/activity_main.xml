@@ -13,7 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="44dp"
-        android:text="Trabajo Final"
+        android:text="Ticmas Trabajo Final"
         android:textStyle="bold"
         android:textSize="40dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -30,9 +30,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toTopOf="@id/caja2"
-        app:helperText="10 caracteres como maximo"
+        app:helperText="15 caracteres como maximo"
         app:counterEnabled="true"
-        app:counterMaxLength="10"
+        app:counterMaxLength="15"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.80"
         >
@@ -41,7 +41,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
-            android:maxLength="10"
+            android:maxLength="15"
         android:textSize="20dp" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -53,8 +53,8 @@
         android:layout_height="wrap_content"
         android:hint="Escribe el segundo valor"
         app:counterEnabled="true"
-        app:counterMaxLength="10"
-        app:helperText="10 caracteres como maximo"
+        app:counterMaxLength="15"
+        app:helperText="15 caracteres como maximo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -66,35 +66,39 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
-            android:maxLength="10"
+            android:maxLength="15"
             android:textSize="20dp" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/boton1"
-        android:layout_width="150dp"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
         android:background="@color/purple_200"
         android:text="Comparar"
         android:textColor="@color/white"
-        app:layout_constraintEnd_toStartOf="@id/boton2"
+        android:backgroundTint="@color/teal_200"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/caja2"></androidx.appcompat.widget.AppCompatButton>
+        app:layout_constraintTop_toBottomOf="@id/caja2"
+        ></androidx.appcompat.widget.AppCompatButton>
+
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/boton2"
-        android:layout_width="150dp"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="12dp"
         android:background="@color/purple_200"
-        android:text="Limpiar"
+        android:backgroundTint="@color/teal_200"
+        android:text="Borrar"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/boton1"
-        app:layout_constraintTop_toBottomOf="@id/caja2" />
-
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/boton1" />
 
     <TextView
         android:id="@+id/texto1"
@@ -107,20 +111,19 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.45"
-        app:layout_constraintHorizontal_bias="0.50"></TextView>
+        app:layout_constraintVertical_bias="0.549"></TextView>
 
     <TextView
         android:id="@+id/texto2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textSize="40dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/texto1"
-        android:textSize="40dp"
-        app:layout_constraintVertical_bias="0.282"
-        app:layout_constraintHorizontal_bias="0.50"></TextView>
+        app:layout_constraintVertical_bias="0.343"></TextView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
